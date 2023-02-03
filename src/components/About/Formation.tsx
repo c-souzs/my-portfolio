@@ -29,8 +29,8 @@ const courses = [
 const Formation = () => {
     return (
         <div>
-            <h5 className="font-poppins font-medium text-xl mb-7">Formação e cursos.</h5>
-            <ul className="grid grid-cols-3 gap-6">
+            <h5 className="font-poppins font-medium text-xl text-white-100 mb-7 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded">Formação e cursos.</h5>
+            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {
                     courses.map(({name, date, place}, index) => {
                         return (
@@ -39,7 +39,7 @@ const Formation = () => {
                                     <h6>{ name }</h6>
                                     <p className="text-sm opacity-50 text-right">{ date }</p>
                                 </div>
-                                <p className="text-[#d8d8d8] font-roboto text-sm">{ place }</p>
+                                <p className="text-white-50 font-roboto text-sm">{ place }</p>
                             </li>
                         )
                     })

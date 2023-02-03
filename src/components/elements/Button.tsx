@@ -13,7 +13,7 @@ const Button = ({ text, type, icon, onClick }: ButtonProps) => {
 
     return (
         <button onClick={onClick} 
-            className={className("rounded-3xl px-8 py-2 text-base font-poppins border border-blue-100 flex items-center gap-3 transition-colors", { "bg-blue-100 hover:bg-blue-200 hover:border-blue-200": type === "primary"}, {"bg-transparent hover:bg-blue-200 hover:border-blue-200": type === "secondary"})}
+            className={className("rounded-3xl px-8 py-2 text-base text-white-100 font-poppins border border-blue-100 flex items-center gap-3 transition-colors", { "bg-blue-100 hover:bg-blue-200 hover:border-blue-200": type === "primary"}, {"bg-transparent hover:bg-blue-200 hover:border-blue-200": type === "secondary"})}
         >
             { text }
             { Icon && <Icon size={16} color="#FFF"/> }

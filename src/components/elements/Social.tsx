@@ -31,7 +31,7 @@ type SocialProps = {
 
 const Social = ({ type }: SocialProps) => {
     return (
-        <ul className={classNames("flex flex-wrap justify-between items-center", {"gap-12": type === "big"}, {"gap-4": type === "small"})}>
+        <ul className={classNames("flex flex-wrap justify-center items-center", {"gap-12": type === "big"}, {"gap-4": type === "small"})}>
             {
                 contacts.map(({icon, user, link}) => {
                     const Icon = icon;

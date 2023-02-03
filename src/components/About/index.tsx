@@ -1,15 +1,15 @@
-import self from '../../assets/my-self.png';
-import Social from '../elements/Social';
-import TitleSection from '../elements/TitleSection';
-import Formation from './Formation';
+import self from "../../assets/my-self.png";
+import Social from "../elements/Social";
+import TitleSection from "../elements/TitleSection";
+import Formation from "./Formation";
 
 const About = () => {
     return (
-        <section id="about" className="py-24 bg-black-100 text-white">
-            <div className="max-w-[1140px] mx-auto relative z-50">
+        <section id="about" className="py-14 bg-black-100 text-white lg:py-20">
+            <div className="max-w-[1140px] mx-auto px-4 relative z-50 lg:px-2">
                 <TitleSection>Quem sou</TitleSection>
-                <div className='flex items-center justify-between gap-14 mb-14'>
-                    <div>
+                <div className="mb-14 text-white-100 flex flex-col gap-7 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
+                    <div className="flex flex-col justify-center items-center gap-4 lg:block">
                         <div className="w-[250px] mb-4">
                             <img src={self} alt="Caio Souza" className="rounded-full object-cover"/>
                         </div>

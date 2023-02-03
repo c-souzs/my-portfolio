@@ -16,6 +16,10 @@ module.exports = {
           100: '#09090B',
           200: '#040405',
         },
+        white: {
+          50: '#D8D8D8',
+          100: '#FFF',
+        },
       },
       keyframes: {
         'wave-animation': {
@@ -43,7 +47,9 @@ module.exports = {
       },
       boxShadow: {
         'card-knowledges': '4px 5px 4px 3px rgba(14, 124, 255, .137)',
-        'icon-contact': '0 0 5px rgba(14, 124, 255, 1)',
+        'icon-contact': '0 0 5px #0E7CFF',
+        'menu-mobile': 'currentcolor 0px 7px, currentcolor 0px -7px',
+        'bg-menu-mobile': '#0E7CFF 0px 0px .25rem',
       },
     },
   },
