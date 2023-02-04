@@ -11,7 +11,7 @@ type HomeProps = {
 const Home = ({ setShowButtonHeader }: HomeProps) => {
 
     return (
-        <main className="pt-[100px]">
+        <main className="pt-[100px] bg-black-200">
             <Introduction setShowButtonHeader={setShowButtonHeader}/>
             <About />
             <Projects />

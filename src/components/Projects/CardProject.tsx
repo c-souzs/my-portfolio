@@ -5,15 +5,24 @@ import { Project } from "../../utils/dataProjects";
 import classNames from "classnames";
 import { SiGithub } from "react-icons/si";
 import React from "react";
+import ScrollReveal from 'scrollreveal';
 
 type CardProjectProps = Project & {
     inverted: boolean;
 }
 
 const CardProject = ({ name, description, banner, technologies, site, repository, inverted }: CardProjectProps) => {
-    
+    React.useEffect(() => {
+        ScrollReveal().reveal(".teste", {
+            origin: "top",
+            distance: "50px",
+            duration: 2000,
+            delay: 400,
+            reset: false
+        });
+    }, []);
     return (
-        <li className={classNames("flex flex-col gap-y-6 lg:grid lg:gap-8", {"grid-cols-card-project-inverted": inverted}, {"grid-cols-card-project": !inverted})}>
+        <li className={classNames("flex teste flex-col gap-y-6 lg:grid lg:gap-8", {"grid-cols-card-project-inverted": inverted}, {"grid-cols-card-project": !inverted})}>
             <img src={banner} alt={name} className={classNames("w-full rounded", {"row-start-1 col-start-2": inverted})}/>
             <div className={classNames({"row-start-1 col-start-1": inverted})}>
                 <h3 className="font-poppins text-2xl text-white-100 mb-3 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded">{ name }</h3>
