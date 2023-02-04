@@ -29,12 +29,12 @@ const courses = [
 const Formation = () => {
     return (
         <div>
-            <h5 className="font-poppins font-medium text-xl text-white-100 mb-7 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded">Formação e cursos.</h5>
+            <h5 className="font-poppins font-medium text-xl text-white-100 mb-7 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded delayMediumReveal">Formação e cursos.</h5>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {
                     courses.map(({name, date, place}, index) => {
                         return (
-                            <li className="bg-black-200 rounded px-4 py-2" key={index}>
+                            <li className="bg-black-200 rounded px-4 py-2 intervalCardReveal" key={index}>
                                 <div className="flex justify-between gap-4 mb-2 font-poppins text-blue-100 font-semibold">
                                     <h6>{ name }</h6>
                                     <p className="text-sm opacity-50 text-right">{ date }</p>

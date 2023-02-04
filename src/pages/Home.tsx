@@ -1,4 +1,3 @@
-import { HiDownload } from "react-icons/hi";
 import About from "../components/About";
 import Introduction from "../components/Introduction";
 import Knowledges from "../components/Knowledges";

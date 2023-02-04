@@ -12,21 +12,13 @@ type CardProjectProps = Project & {
 }
 
 const CardProject = ({ name, description, banner, technologies, site, repository, inverted }: CardProjectProps) => {
-    React.useEffect(() => {
-        ScrollReveal().reveal(".teste", {
-            origin: "top",
-            distance: "50px",
-            duration: 2000,
-            delay: 400,
-            reset: false
-        });
-    }, []);
+    
     return (
-        <li className={classNames("flex teste flex-col gap-y-6 lg:grid lg:gap-8", {"grid-cols-card-project-inverted": inverted}, {"grid-cols-card-project": !inverted})}>
-            <img src={banner} alt={name} className={classNames("w-full rounded", {"row-start-1 col-start-2": inverted})}/>
+        <li className={classNames("flex  flex-col gap-y-6 lg:grid lg:gap-8", {"grid-cols-card-project-inverted": inverted}, {"grid-cols-card-project": !inverted})}>
+            <img src={banner} alt={name} className={classNames("w-full rounded delaySmallReveal", {"row-start-1 col-start-2": inverted})}/>
             <div className={classNames({"row-start-1 col-start-1": inverted})}>
-                <h3 className="font-poppins text-2xl text-white-100 mb-3 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded">{ name }</h3>
-                <p className="font-roboto text-white-100">
+                <h3 className="font-poppins text-2xl text-white-100 mb-3 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded delayMediumReveal">{ name }</h3>
+                <p className="font-roboto text-white-100 delaySmallReveal">
                     { 
                         description.split("<span> ").map((strg, index) => {
                             const hasBold = strg.includes(" </span>");
@@ -48,7 +40,7 @@ const CardProject = ({ name, description, banner, technologies, site, repository
                 <CardsTecnologies 
                     technologies={technologies}
                 />
-                <div className="flex items-center gap-6 font-poppins">
+                <div className="flex items-center gap-6 font-poppins delaySmallReveal">
                     <Link to={site} target="_blank" className="group flex justify-between items-center gap-3 rounded-3xl px-8 py-2 text-base font-poppins text-white-100 border border-blue-100">
                         Visitar site
                         <HiArrowSmRight size={16} color="#FFF" className="transition-transform group-hover:translate-x-1"/>

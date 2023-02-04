@@ -12,7 +12,7 @@ const CardsTecnologies = ({ technologies }: CardsTecnologiesProps) => {
     });
     
     return (
-        <ul className="flex gap-4 mt-4 mb-6">
+        <ul className="flex gap-4 mt-4 mb-6 delaySmallReveal">
             {
                 selectTechnologies.map((data, index) => {
                     const { icon, name } = data;
