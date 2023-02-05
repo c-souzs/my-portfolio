@@ -6,22 +6,22 @@ const contacts = [
     {
         icon: SiLinkedin,
         user: "Caio Souza",
-        link: ""
+        link: "https://www.linkedin.com/in/souzzs/"
     },
     {
         icon: SiGmail,
         user: "souzsdev@gmail.com",
-        link: ""
+        link: "mailto:souzsdev@gmail.com"
     },
     {
         icon: SiGithub,
         user: "Souzzs",
-        link: ""
+        link: "https://github.com/souzzs"
     },
     {
         icon: SiDiscord,
         user: "souzzs#4789",
-        link: ""
+        link: "https://discord.com/invite/BsnqGK6e"
     },
 ]
 
@@ -38,9 +38,15 @@ const Social = ({ type }: SocialProps) => {
 
                     return (
                         <li key={user}>
-                            <Link to={link} className="block text-blue-100 bg-black-100 rounded-full p-3 transition-shadow hover:shadow-icon-contact">
-                                <Icon size={type === "big" ? 24 : 18}/>
-                            </Link>
+                            {user === "souzsdev@gmail.com" ? (
+                                <a href={link} className="block text-blue-100 bg-black-100 rounded-full p-3 transition-shadow hover:shadow-icon-contact">
+                                    <Icon size={type === "big" ? 24 : 18}/>
+                                </a>
+                            ) :  (
+                                <Link to={link} className="block text-blue-100 bg-black-100 rounded-full p-3 transition-shadow hover:shadow-icon-contact" target="_blank">
+                                    <Icon size={type === "big" ? 24 : 18}/>
+                                </Link>
+                            )}
                         </li>
                     )
                 })

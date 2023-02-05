@@ -18,9 +18,9 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 font-roboto">
-                        <p className="intervalCardReveal">Prazer, me chamo Caio Henrique de Souza, ou souzzs (nick de desenvolvedor), tenhos 20 anos e sou natural de Pains, MG. Atualmente, estou cursando o primeiro período de Sistemas de informação na UFLA. Após cursar o ensino médio técnico no IFMG - campus Formiga, tive conhecimento sobre o mundo da programação e decidi seguir minha carreira na área de desnvolvimento web. </p>
-                        <p className="intervalCardReveal">Dediquei cerca de 8 meses para me atualizar das principais tecnologias javascript para o desenvolvimento de interfaces, criando projetos como: dashboard, e-commerce e landing pages, me apaixonando ainda mais por esse mundo incrível da programação. Nesse período trabalhei bastante minhas softs kill sendo ativo em comunidades do discord.</p>
-                        <p className="intervalCardReveal">Tenho planos de me tornar um desenvolvedor full stack e dominar as principais tecnologias da melhor linguagem, javascript. Sou apaixonado por futebol, corrida e músicas. Três palavras que me definem? Consistente, esforçado e otimista.</p>
+                        <p className="intervalCardReveal">Prazer, meu nome é Caio Henrique de Souza, mas sou conhecido como "souzzs" (nickname de desenvolvedor). Tenho 20 anos e sou de Pains, MG. Atualmente, estou cursando o primeiro ano de Sistemas de Informação na UFLA. Depois de completar o ensino médio técnico no IFMG - Campus Formiga, descobri o mundo da programação e decidi seguir carreira na área de desenvolvimento web.</p>
+                        <p className="intervalCardReveal">Dediquei cerca de 8 meses para me atualizar nas principais tecnologias de JavaScript para desenvolvimento de interfaces, criando projetos como dashboards, e-commerces e landing pages. Fiquei ainda mais apaixonado por este incrível mundo da programação. Neste período, trabalhei bastante nas minhas habilidades soft, sendo ativo em comunidades no Discord.</p>
+                        <p className="intervalCardReveal">Meus planos são me tornar um desenvolvedor full-stack e dominar as principais tecnologias da melhor linguagem, o JavaScript. Sou apaixonado por futebol, corrida e música. Três palavras que me definem? Consistente, esforçado e otimista.</p>
                     </div>
                 </div>
                 <Formation />

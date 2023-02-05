@@ -4,6 +4,7 @@ import image from "../assets/men.svg";
 import Button from "./elements/Button";
 import { SiLinkedin } from "react-icons/si";
 import { HiDownload } from "react-icons/hi";
+import CustomLink from "./elements/CustomLink";
 
 type IntroductionProps = {
     setShowButtonHeader: React.Dispatch<React.SetStateAction<boolean>>;
@@ -36,8 +37,8 @@ const Introduction = ({ setShowButtonHeader }: IntroductionProps) => {
                         <h3 className="font-poppins text-white-50 mb-1 text-lg delayMediumReveal">
                             Olá, eu sou <p className="inline-block font-medium text-xl text-white-100">Caio Souza </p> <p className="inline-block font-medium text-xl animate-wave origin-[70% 70%]">👋🏻</p>
                         </h3>
-                        <h1 className="text-5xl font-poppins font-semibold text-blue-100 mb-3 delaySmallReveal"> Desenvolvedor <br /> front end </h1>
-                        <p className="max-w-[600px] font-roboto text-lg text-white-50 delayMediumReveal">Estutande de sistemas de informação. Apxionado pelo ecosistema javascript. Em busca da minha primeira oportunidade.</p>
+                        <h1 className="text-5xl font-poppins font-semibold text-blue-100 mb-3 delaySmallReveal"> Desenvolvedor <br /> front-end </h1>
+                        <p className="max-w-[600px] font-roboto text-lg text-white-50 delayMediumReveal">Estudante de Sistemas de Informação. Apaxionado pelo ecosistema javascript. Em busca da minha primeira oportunidade.</p>
                     </div>
                     <div className="flex flex-wrap gap-x-8 gap-y-4 delayMediumReveal" ref={groupButtonRef}>
                         <Button 
@@ -45,7 +46,8 @@ const Introduction = ({ setShowButtonHeader }: IntroductionProps) => {
                             type="primary"
                             icon={HiDownload}
                         />
-                        <Button 
+                        <CustomLink
+                            to="https://www.linkedin.com/in/souzzs/" 
                             text="Linkedin"
                             type="secondary"
                             icon={SiLinkedin}

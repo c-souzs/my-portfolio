@@ -17,15 +17,15 @@ type DataProjects = Project[];
 const dataProjects: DataProjects = [
     {
         name: "Dash next",
-        description: "No meu maior projeto desenvolvido criei uma dashboard utilizando o <span> nextJs </span> para criar interfaces com atualização assíncrona, graças a <span> contextAPI </span>. No lado do back, fiz a integração do sistema com o <span> prisma </span> para criar o banco de dados e o <span> planetScale </span> para hospedagem.",
+        description: "No meu maior projeto desenvolvido, criei uma dashboard utilizando o <span> Next.js </span> para criar interfaces com atualização assíncrona graças ao <span> Context API </span>. No lado do back-end, fiz a integração do sistema com o <span> Prisma </span> para criar o banco de dados e com o <span>PlanetScale</span> para hospedagem.",
         banner: dashboard,
         site: "https://next-dash-souzzs.vercel.app/login",
         repository: "https://github.com/souzzs/next-dash",
-        technologies: ["typescript", "next", "prisma", "node", "tailwindcss"]
+        technologies: ["typescript", "next", "prisma", "tailwindcss"]
     },
     {
         name: "Custom ranek",
-        description: "Uma e-commerce de anúncios e vendas de produtos eletronicos. Nela trabalhei com o <span> react-router-dom </span> para manipular as rotas e utilizei o <span> redux </span> para controlar estados de requisição e dados do sistema.",
+        description: "Desenvolvi uma e-commerce de anúncios e vendas de produtos eletrônicos. Nela, trabalhei com o <span> react-router-dom </span> para manipular as rotas e utilizei o <span> Redux </span> para controlar os estados de requisições e dados do sistema.",
         banner: customRanek,
         site: "https://custom-ranek.vercel.app/",
         repository: "https://github.com/souzzs/custom-ranek",
@@ -33,7 +33,7 @@ const dataProjects: DataProjects = [
     },
     {
         name: "Hadye",
-        description: "Uma landing page para uma empresa fictícia de gestão e aumento de vendas. O objetivo do projeto foi amplicar e estudar das bibliotecas <span> tailwindcss </span> e <span> react </span>. Nele foram aplicados recursos nativos do <span> javascript </span> para criar animações suave ao scroll.",
+        description: "Criei uma landing page para uma empresa fictícia de gestão e aumento de vendas. O objetivo do projeto foi ampliar e estudar as bibliotecas <span> tailwindcss </span> e <span> React </span>. Nela, foram aplicados recursos nativos do <span> JavaScript </span> para criar animações suaves ao rolar a página.",
         banner: hadye,
         site: "https://hadye.vercel.app/",
         repository: "https://github.com/souzzs/hadye",
@@ -41,7 +41,7 @@ const dataProjects: DataProjects = [
     },
     {
         name: "Gatos fantásticos",
-        description: "Gatos fantásticos é um site para uma ONG fictícia de adoção de gatos. O intuito do projeto foi aprofundar os conhecimentos em <span> consumo de API'S </span> com javascript puro e a  utilização do <span> github </span> para hospedagem de código e para o aprendizado de um <span> gitflow </span>.",
+        description: "Gatos Fantásticos é um site para uma ONG fictícia de adoção de gatos. O objetivo do projeto foi aprofundar meus conhecimentos em <span> consumo de APIs </span> com JavaScript puro e na utilização do <span> GitHub </span> para hospedagem de código e para aprender um <span> gitflow </span>.",
         banner: gatosFantasticos,
         site: "https://souzzs.github.io/gatos-fantasticos/",
         repository: "https://github.com/souzzs/gatos-fantasticos",

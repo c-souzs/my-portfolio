@@ -45,7 +45,7 @@ const CardProject = ({ name, description, banner, technologies, site, repository
                         Visitar site
                         <HiArrowSmRight size={16} color="#FFF" className="transition-transform group-hover:translate-x-1"/>
                     </Link>
-                    <Link to={repository} className="text-white-50 text-sm flex items-center gap-3 transition-colors hover:text-white-100"> 
+                    <Link to={repository} target="_blank" className="text-white-50 text-sm flex items-center gap-3 transition-colors hover:text-white-100"> 
                         Repositório 
                         <SiGithub size={14} />
                     </Link>
