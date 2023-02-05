@@ -1,5 +1,10 @@
 const courses = [
     {
+        name: "Graduação em Sistemas de informação",
+        place: "UFLA",
+        date: "2022 há atual"
+    },
+    {
         name: "Curso técnico de informática integrado.",
         place: "IFMG - campus formiga",
         date: "2019 há 2021"
@@ -19,11 +24,6 @@ const courses = [
         place: "B7web - Boniey",
         date: "2023"
     },
-    {
-        name: "Graduação em Sistemas de informação",
-        place: "UFLA",
-        date: "2023 há atual"
-    }
 ]
 
 const Formation = () => {
