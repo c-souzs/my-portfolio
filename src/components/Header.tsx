@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import React from "react";
 import Logo from "./elements/Logo";
+import { HiDownload } from "react-icons/hi";
+import downloadCurriculum from "../utils/downloadCurriculum";
 
 const optionsMenu = [
     {
@@ -40,7 +42,10 @@ const Header = ({ showButtonHeader }: HeaderProps) => {
                         {
                             showButtonHeader && (
                                 <li>
-                                    <button className="relative inline-block text-lg animate-right after:block after:h-[2px] after:w-full after:bg-blue-100 after:mt-1 after:absolute after:rounded">Baixar cv</button>
+                                    <button onClick={async () => await downloadCurriculum()} className="relative flex items-center justify-between gap-3 text-lg animate-right transition-colors hover:text-blue-200">
+                                        Baixar cv
+                                        <HiDownload size={16}/>
+                                    </button>
                                 </li>
                             )
                         }

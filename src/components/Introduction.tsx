@@ -5,6 +5,7 @@ import Button from "./elements/Button";
 import { SiLinkedin } from "react-icons/si";
 import { HiDownload } from "react-icons/hi";
 import CustomLink from "./elements/CustomLink";
+import downloadCurriculum from "../utils/downloadCurriculum";
 
 type IntroductionProps = {
     setShowButtonHeader: React.Dispatch<React.SetStateAction<boolean>>;
@@ -44,6 +45,7 @@ const Introduction = ({ setShowButtonHeader }: IntroductionProps) => {
                         <Button 
                             text="Baixar cv"
                             type="primary"
+                            onClick={async () => await downloadCurriculum()}
                             icon={HiDownload}
                         />
                         <CustomLink
