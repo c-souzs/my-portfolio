@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiStyledcomponents, SiPrisma, SiRedux, SiGithub, SiFigma } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiStyledcomponents, SiPrisma, SiRedux, SiGithub, SiFigma, SiNodedotjs } from 'react-icons/si';
 
 export const dataTechnologies = {
     html: {
@@ -40,6 +40,10 @@ export const dataTechnologies = {
     prisma: {
         icon: SiPrisma,
         name: 'prisma'
+    },
+    node: {
+        icon: SiNodedotjs,
+        name: 'nodeJs'
     },
     tailwindcss: {
         icon: SiTailwindcss,
