@@ -1,5 +1,7 @@
+import curriculumPdf from '../assets/curriculo.pdf';
+
 const downloadCurriculum = async () => {
-    const response = await fetch('/src/assets/curriculo.pdf');
+    const response = await fetch(curriculumPdf);
     const file = await response.blob();
 
     const link = document.createElement('a');
