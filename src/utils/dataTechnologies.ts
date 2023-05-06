@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiStyledcomponents, SiPrisma, SiRedux, SiGithub, SiFigma, SiNodedotjs } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiStyledcomponents, SiPrisma, SiRedux, SiGithub, SiFigma, SiNodedotjs, SiJest, SiTestinglibrary, SiGraphql } from 'react-icons/si';
 
 export const dataTechnologies = {
     html: {
@@ -37,13 +37,13 @@ export const dataTechnologies = {
         icon: SiNextdotjs,
         name: 'nextJs'
     },
-    prisma: {
-        icon: SiPrisma,
-        name: 'prisma'
+    jest: {
+        icon: SiJest,
+        name: 'jest'
     },
-    node: {
-        icon: SiNodedotjs,
-        name: 'nodeJs'
+    reactTestingLibrary: {
+        icon: SiTestinglibrary,
+        name: 'testing library'
     },
     tailwindcss: {
         icon: SiTailwindcss,
@@ -52,7 +52,20 @@ export const dataTechnologies = {
     styledcomponents: {
         icon: SiStyledcomponents,
         name: 'styled components'
+    },
+    prisma: {
+        icon: SiPrisma,
+        name: 'prisma'
+    },
+    node: {
+        icon: SiNodedotjs,
+        name: 'nodeJs'
+    },
+    graphQl: {
+        icon: SiGraphql,
+        name: 'graphQL'
     }
+    
 }
 
 export type DataTechnologies = keyof typeof dataTechnologies;

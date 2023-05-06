@@ -18,9 +18,9 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 font-roboto">
-                        <p className="intervalCardReveal">Prazer, meu nome é Caio Henrique de Souza, mas sou conhecido como "souzzs" (nickname de desenvolvedor). Tenho 20 anos e sou de Pains, MG. Atualmente, estou cursando o primeiro ano de Sistemas de Informação na UFLA. Depois de completar o ensino médio técnico no IFMG - Campus Formiga, descobri o mundo da programação e decidi seguir carreira na área de desenvolvimento web.</p>
-                        <p className="intervalCardReveal">Dediquei cerca de 8 meses para me atualizar nas principais tecnologias de JavaScript para desenvolvimento de interfaces, criando projetos como dashboards, e-commerces e landing pages. Fiquei ainda mais apaixonado por este incrível mundo da programação. Neste período, trabalhei bastante nas minhas habilidades soft, sendo ativo em comunidades no Discord.</p>
-                        <p className="intervalCardReveal">Meus planos são me tornar um desenvolvedor full-stack e dominar as principais tecnologias da melhor linguagem, o JavaScript. Sou apaixonado por futebol, corrida e música. Três palavras que me definem? Consistente, esforçado e otimista.</p>
+                        <p className="intervalCardReveal">Prazer, meu nome é Caio Henrique de Souza. Tenho 20 anos e atualmente moro em Lavras, MG. Sou desenvolvedor front-end, entusiasta do desenvolvimento web, técnico em informática pelo IFMG e cursando Sistemas de Informação.</p>
+                        <p className="intervalCardReveal">Durante minha jornada de estudos, tive a oportunidade de realizar projetos desafiadores para aplicar minhas habilidades. Entre eles, destaco uma dashboard administrativa e um sistema online com a integração de uma API de pagamentos. Esses projetos me permitiram evoluir minhas habilidades em tecnologias como JavaScript, Typescript, React, Next.js, Styled Components, Redux e GraphQL. Como resultado, aprimorei meus conhecimentos em JavaScript e adotei boas práticas de programação avançadas.</p>
+                        <p className="intervalCardReveal">Meus planos são me tornar um desenvolvedor full-stack e dominar as principais tecnologias da melhor linguagem, o JavaScript. Estou sempre pronto para enfrentar novos desafios e buscar novas oportunidades para aprimorar minhas habilidades 💪🏻</p>
                     </div>
                 </div>
                 <Formation />
