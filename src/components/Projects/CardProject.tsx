@@ -12,31 +12,14 @@ type CardProjectProps = Project & {
 }
 
 const CardProject = ({ name, description, banner, technologies, site, repository, inverted }: CardProjectProps) => {
+    console.log(description);
     
     return (
         <li className={classNames("flex  flex-col gap-y-6 lg:grid lg:gap-8", {"grid-cols-card-project-inverted": inverted}, {"grid-cols-card-project": !inverted})}>
-            <img src={banner} alt={name} className={classNames("w-full rounded delaySmallReveal", {"row-start-1 col-start-2": inverted})}/>
+            <img src={banner} alt={name} className={classNames("w-full h-full object-cover rounded delaySmallReveal", {"row-start-1 col-start-2": inverted})}/>
             <div className={classNames({"row-start-1 col-start-1": inverted})}>
                 <h3 className="font-poppins text-2xl text-white-100 mb-3 flex items-center gap-2 before:w-4 before:h-1 before:bg-blue-100 before:inline-block before:rounded delayMediumReveal">{ name }</h3>
-                <p className="font-roboto text-white-100 delaySmallReveal">
-                    { 
-                        description.split("<span> ").map((strg, index) => {
-                            const hasBold = strg.includes(" </span>");
-
-                            if(hasBold){
-                                const textApplyBold = strg.split(" </span>")[0];
-                                const textNormal = strg.split(" </span>")[1];
-
-                                return (
-                                    <React.Fragment key={`bold-${index}`}>
-                                        <span className="font-semibold text-white inline-block">{ textApplyBold }</span>
-                                        { textNormal }
-                                    </React.Fragment>
-                                )
-                            } else return <React.Fragment key={`normal-${index}`}>{ strg }</React.Fragment>;
-                        })
-                    }
-                </p>
+                <div className="font-roboto text-base text-white-100 delaySmallReveal" dangerouslySetInnerHTML={{__html: description}}/>
                 <CardsTecnologies 
                     technologies={technologies}
                 />

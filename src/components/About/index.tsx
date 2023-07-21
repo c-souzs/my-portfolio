@@ -6,7 +6,7 @@ import Formation from "./Formation";
 const About = () => {
     return (
         <section id="about" className="py-14 bg-black-100 text-white lg:py-20">
-            <div className="max-w-[1140px] mx-auto px-4 relative z-50 lg:px-2">
+            <div className="max-w-7xl mx-auto px-6 relative z-50">
                 <TitleSection>Quem sou</TitleSection>
                 <div className="mb-14 text-white-100 flex flex-col gap-7 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
                     <div className="flex flex-col justify-center items-center gap-4 lg:block delaySmallReveal">

@@ -3,7 +3,7 @@ import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal({
     origin: "top",
     distance: "50px",
-    duration: 2000,
+    duration: 1700,
 });
 
 export default sr;

@@ -32,7 +32,7 @@ const Introduction = ({ setShowButtonHeader }: IntroductionProps) => {
 
     return (
         <section className="h-[calc(100vh-100px)] bg-black-200 text-white">
-            <div className="h-full max-w-[1140px] mx-auto px-4 relative z-50 flex flex-col justify-center md:px-2 md:flex-row md:items-center md:justify-between">
+            <div className="h-full max-w-7xl mx-auto px-6 relative z-50 flex flex-col justify-center md:flex-row md:items-center md:justify-between">
                 <div>
                     <div className="mb-8">
                         <h3 className="font-poppins text-white-50 mb-1 text-lg delayMediumReveal">

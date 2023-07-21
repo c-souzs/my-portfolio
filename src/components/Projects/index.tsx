@@ -5,7 +5,7 @@ import CardProject from "./CardProject";
 const Projects = () => {
     return (
         <section id="projects" className="py-14 bg-black-200 lg:py-20">
-            <div className="max-w-[1140px] mx-auto relative z-50 px-4 lg:px-2">
+            <div className="max-w-7xl mx-auto relative z-50 px-6">
                 <TitleSection>Projetos</TitleSection>
                 <ul className="flex flex-col gap-y-24">
                     {

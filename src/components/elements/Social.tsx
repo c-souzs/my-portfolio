@@ -6,7 +6,7 @@ const contacts = [
     {
         icon: SiLinkedin,
         user: "Caio Souza",
-        link: "https://www.linkedin.com/in/souzzs/"
+        link: "https://www.linkedin.com/in/souzs/"
     },
     {
         icon: SiGmail,
@@ -16,7 +16,7 @@ const contacts = [
     {
         icon: SiGithub,
         user: "Souzzs",
-        link: "https://github.com/souzzs"
+        link: "https://github.com/c-souzs"
     },
     {
         icon: SiDiscord,
