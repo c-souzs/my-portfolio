@@ -17,7 +17,7 @@ const App = () => {
         sr.reveal(".delayExtraBigReveal", { delay: 600 });
         sr.reveal(".intervalCardReveal", { interval: 400 });
 
-        document.title = "Portfólio || Souzzs";
+        document.title = "Portfólio || Souzs";
     }, []);
 
     return (
